@@ -1,17 +1,15 @@
-package com.dearone.calendar;
+package com.dearone.wallet.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
-@RequestMapping("dearone/calendar")
-public class CalendarController {
-	
+@RequestMapping("dearone/wallet")
+public class WalletController {
+
 	@GetMapping(value = "/main.do")
 	public String main() throws Exception {
-		return "calendar/main";
+		return "wallet/main";
 	}
-	
 }

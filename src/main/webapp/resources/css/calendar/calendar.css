@@ -1,0 +1,6 @@
+@charset "UTF-8";
+.deaone_calendar.mbsc-ios.mbsc-eventcalendar .mbsc-calendar-header, .mbsc-ios.mbsc-eventcalendar .mbsc-calendar-week-days { background: #fff; }
+.deaone_calendar.mbsc-ios.mbsc-calendar-width-md .mbsc-calendar-title { font-size: 18px; color: #353535; font-weight: bold; letter-spacing: 3px; }
+.mbsc-ios.mbsc-calendar-button.mbsc-button { color: #6b6a6a !important; font-size: 12px !important; }
+/* .mbsc-ios.mbsc-selected .mbsc-calendar-cell-text { background: #f0adad; border-color : #f0adad; }
+.mbsc-ios.mbsc-hover .mbsc-calendar-cell-text { background: #f0adad; border-color : #f0adad; } */

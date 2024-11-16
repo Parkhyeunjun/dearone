@@ -15,6 +15,8 @@
   <!-- calendar libs -->
   <link rel="stylesheet" href="<c:url value='/resources/css/mobiscroll/mobiscroll.jquery.min.css'/>">
   <script src="<c:url value='/resources/js/plugin/mobiscroll/mobiscroll.jquery.min.js'/>"></script>
+  <!-- calendar custom css -->
+  <link rel="stylesheet" href="<c:url value='/resources/css/calendar/calendar.css'/>" />
     
   <link rel="shortcut icon" type="image/png" href="<c:url value='/resources/images/template/logos/favicon.png'/>" />
   <link rel="stylesheet" href="<c:url value='/resources/css/template/styles.min.css'/>" />
