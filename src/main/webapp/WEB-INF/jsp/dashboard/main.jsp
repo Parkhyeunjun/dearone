@@ -31,7 +31,7 @@
           <!-- Yearly Breakup -->
           <div class="card overflow-hidden">
             <div class="card-body p-4">
-              <h5 class="card-title mb-9 fw-semibold">Yearly Breakup</h5>
+              <h5 class="card-title mb-9 fw-semibold">Yearly Breakup 사용하지 않는것들은 지우기</h5>
               <div class="row align-items-center">
                 <div class="col-8">
                   <h4 class="fw-semibold mb-3">$36,358</h4>
