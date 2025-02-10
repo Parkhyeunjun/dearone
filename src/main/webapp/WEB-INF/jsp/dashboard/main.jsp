@@ -10,7 +10,7 @@
         <div class="card-body">
           <div class="d-sm-flex d-block align-items-center justify-content-between mb-9">
             <div class="mb-3 mb-sm-0">
-              <h5 class="card-title fw-semibold">Sales Overview</h5>
+              <h5 class="card-title fw-semibold">Sales Overview 차트는 쓸일이 있으려나..</h5>
             </div>
             <div>
               <select class="form-select">
