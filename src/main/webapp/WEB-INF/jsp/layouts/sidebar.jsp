@@ -13,8 +13,8 @@
            <img src="<c:url value='/resources/images/template/logos/dark-logo.svg'/>" width="180" alt="" />
          </a>
          <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
-           <i class="ti ti-x fs-8"></i>
-         </div>
+            <i class="ti ti-x fs-8"></i>
+          </div>
        </div>
        <!-- Sidebar navigation-->
        <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
