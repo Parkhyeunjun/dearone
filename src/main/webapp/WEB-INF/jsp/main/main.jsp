@@ -10,6 +10,7 @@
   
   <script src="<c:url value='/resources/js/plugin/jquery/jquery-3.6.0.js'/>"></script>
   <script src="<c:url value='/resources/js/plugin/jquery/jquery-ui.js'/>"></script>
+  
   <link rel="stylesheet" href="<c:url value='/resources/css/jquery/jquery-ui.css'/>" />
   
   <!-- calendar libs -->
@@ -19,7 +20,7 @@
   <link rel="stylesheet" href="<c:url value='/resources/css/calendar/calendar.css'/>" />
     
   <link rel="shortcut icon" type="image/png" href="<c:url value='/resources/images/template/logos/favicon.png'/>" />
-  <link rel="stylesheet" href="<c:url value='/resources/css/template/styles.min.css'/>" />
+  <link rel="stylesheet" href="<c:url value='/resources/css/template/styles.css'/>" />
 </head>
 
 <body>
