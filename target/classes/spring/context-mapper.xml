@@ -3,15 +3,20 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
 	<!-- SqlSession setup for MyBatis Database Layer -->
-	<!-- <bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
+	<bean id="sqlSession" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<property name="dataSource" ref="dataSource" />
-		<property name="configLocation" value="classpath:/egovframework/sqlmap/example/sql-mapper-config.xml" />
-		<property name="mapperLocations" value="classpath:/egovframework/sqlmap/example/mappers/*.xml" />
+		<property name="configLocation" value="classpath:/config/mapper-config.xml" />
+		<!-- <property name="mapperLocations" value="classpath:/mapper/example/mappers/*.xml" /> -->
+		<property name="mapperLocations">
+            <list>
+                <value>classpath:/mapper/**/*.xml</value>
+            </list>
+        </property>
 	</bean>
 
-	MapperConfigurer setup for MyBatis Database Layer with @Mapper("deptMapper") in DeptMapper Interface
+	<!-- MapperConfigurer setup for MyBatis Database Layer with @Mapper("deptMapper") in DeptMapper Interface -->
  	<bean class="org.egovframe.rte.psl.dataaccess.mapper.MapperConfigurer">
-		<property name="basePackage" value="egovframework.example.sample.service.impl" />
-	</bean> -->
+		<property name="basePackage" value="com.dearone.wallet.mapper" />
+	</bean>
     
 </beans>
