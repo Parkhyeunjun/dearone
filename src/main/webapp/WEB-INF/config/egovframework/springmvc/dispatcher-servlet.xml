@@ -19,6 +19,28 @@
             <bean class="egovframework.example.cmmn.web.EgovBindingInitializer"/>
         </property>
     </bean> -->
+    
+    <!-- 2025.03.18 박현준 : controller 응답헤더에서 인코딩이 default 값인 ISO-8859-1 로 되어 한글 꺠지는 현상 해결 -->
+    <mvc:annotation-driven>
+	    <mvc:message-converters>
+	     <bean class="org.springframework.http.converter.StringHttpMessageConverter">
+	   		<constructor-arg value="UTF-8"/>
+	     </bean>            
+         <!-- ###### 필요에 따라 다른 메시지 변환기도 추가 하기. ###### -->        
+         <!-- 클라이언트가 JSON 형식의 데이터를 보내면, Jackson을 통해 Java 객체로 변환 -->
+         <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter"/>
+         <!-- 클라이언트가 JSON 형식의 데이터를 보내면, Gson을 통해 Java 객체로 변환 -->
+         <!-- <bean class="org.springframework.http.converter.json.GsonHttpMessageConverter"/> -->
+
+         <!-- 사용자가 파일을 업로드하면, 이 변환기가 파일 내용을 바이트 배열로 변환 -->
+         <bean class="org.springframework.http.converter.ByteArrayHttpMessageConverter"/>
+         <!-- 사용자가 웹 폼에서 정보를 입력하고 제출하면, 이 변환기가 자동으로 필드를 Java 객체로 변환 -->
+         <bean class="org.springframework.http.converter.FormHttpMessageConverter"/>
+         <!-- 서버에서 클라이언트에게 파일을 다운로드할 때, 이 변환기가 파일 리소스를 응답으로 반환 -->
+         <bean class="org.springframework.http.converter.ResourceHttpMessageConverter"/>
+	    </mvc:message-converters>
+    </mvc:annotation-driven>
+    
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping">
         <property name="interceptors">
             <list>

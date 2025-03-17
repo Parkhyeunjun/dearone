@@ -141,7 +141,7 @@
             <systemPath>${basedir}/src/main/webapp/WEB-INF/lib/ojdbc-14.jar</systemPath>
         </dependency>
         -->
-
+		
 		<dependency>
 			<groupId>org.eclipse</groupId>
 			<artifactId>yasson</artifactId>
@@ -152,6 +152,13 @@
 			<artifactId>javax.json</artifactId>
 			<version>1.1.3</version>
 		</dependency>
+		
+		<!-- JSON OBJECT 사용을 위한 JACKSON 의존성 주입 -->
+		<dependency>
+	       	 <groupId>com.fasterxml.jackson.core</groupId>
+	        <artifactId>jackson-databind</artifactId>
+	        <version>2.17.1</version>
+	    </dependency>
 
 	</dependencies>
 
