@@ -27,7 +27,7 @@ public class WalletController {
 	
 	//phjTest
 	/* @PostMapping(value = "/getTest.do") */
-	@RequestMapping(value = {"/getTest.do"}, produces = "text/plain; charset=UTF-8", method = {RequestMethod.POST})
+	@RequestMapping(value = {"/getTest.do"}, method = {RequestMethod.POST})
 	@ResponseBody
 	public String getTest() {
 		List<EgovMap> resList = new ArrayList<>();
