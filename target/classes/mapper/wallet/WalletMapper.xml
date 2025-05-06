@@ -3,7 +3,7 @@
 <mapper namespace="com.dearone.wallet.mapper.WalletMapper">
 
 	<select id="getTest" resultType="egovMap">
-		select * From User
+		select * From t_user
 	</select>
 
 </mapper>
