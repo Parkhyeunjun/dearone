@@ -12,13 +12,6 @@
         <typeAlias alias="map" type="java.util.Map"/>
         <typeAlias alias="string" type="java.lang.String"/>
         <typeAlias alias="int" type="java.lang.Integer"/>
-
-        <!-- moo_d.com.cmm -->
-        <!-- <typeAlias alias="loginVo" type="moo_d.com.cmm.LoginVo"/>
-        <typeAlias alias="cmmFileVo" type="moo_d.com.cmm.service.CmmFileVo"/>
-        <typeAlias alias="cmmSkinVo" type="moo_d.com.cmm.service.CmmSkinVo"/> -->
-
-        <!-- 이벤트로그 -->
-        <!-- <typeAlias alias="logEventVo" type="moo_d.com.log.service.LogEventVo"/> -->
+        
     </typeAliases>
 </configuration>
